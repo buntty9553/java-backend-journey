@@ -1,0 +1,122 @@
+1. Variables
+
+A variable is used to store data in a program.
+Each variable has a name, type, and value.
+
+Example:
+int age = 21 → stores a number
+String name = "Ghana" → stores text
+
+--------------------------------------------------------------------------------------
+
+2. Data Types
+
+Data types define the type of data a variable can store.
+
+Common data types:
+
+int → whole numbers (10, 20)
+double → decimal numbers (10.5)
+String → text ("hello")
+boolean → true or false
+
+--------------------------------------------------------------------------------------
+
+3. Input in Java
+
+Input is used to take data from the user.
+In Java, we use the Scanner class for input.
+
+
+Scanner sc = new Scanner(System.in)
+
+sc.nextInt() → takes integer input
+sc.nextLine() → takes full line of text
+
+--------------------------------------------------------------------------------------
+
+4. Output in Java
+
+Output is used to display data on the screen.
+
+System.out.println() is used to print output.
+println prints and moves to the next line.
+
+--------------------------------------------------------------------------------------
+
+
+5. Operators
+
+Operators are used to perform operations on data.
+
+Arithmetic operators:
+
+→ addition
+→ subtraction
+→ multiplication
+/ → division
+% → modulus (remainder)
+
+Example:
+age % 2 == 0 → checks if number is even
+
+--------------------------------------------------------------------------------------
+
+
+6. If-Else (Decision Making)
+
+If-else is used to make decisions based on conditions.
+
+If condition is true → execute if block
+Else → execute else block
+
+Example logic:
+If age ≥ 18 → Adult
+Else → Minor
+
+--------------------------------------------------------------------------------------
+
+
+7. Loops
+
+Loops are used to repeat a block of code multiple times.
+
+For loop runs a fixed number of times.
+It has initialization, condition, and increment.
+
+--------------------------------------------------------------------------------------
+
+
+8. Arrays
+
+An array is a collection of elements stored in a single variable.
+
+Example:
+int[] arr = {10, 20, 30}
+
+Used to store multiple values of the same type.
+
+--------------------------------------------------------------------------------------
+
+
+9. Logic Building
+
+Before writing code:
+
+First understand the problem
+Think about the steps
+Then write code
+
+Good programmers focus on logic first, not syntax.
+
+--------------------------------------------------------------------------------------
+
+
+10. Problem Solving Approach
+
+Steps to solve any problem:
+
+Understand the problem
+Think of solution (logic)
+Write code
+Test with different inputs

@@ -1,0 +1,38 @@
+/*
+💻 2. Reverse a String
+📌 Problem:
+
+Take a string as input and print its reverse.
+
+
+Sample I/P = Enter string: hello
+Sample O/P = Reversed string: olleh
+ */
+
+
+
+package Basics;
+
+public class iv_Reverse_a_String {
+    public static void main(String[] args){
+
+        //Initialize the String
+        String str = "hello";
+
+        //Length of the string
+        int length = str.length();
+
+        //Take an empty string for reverse string
+        String reverse = "";
+
+        // Now run the loop from the last and add each character in the reverse string
+
+        for(int i = length-1; i>=0; i-- ){//Here length-1 beacuse of indexing
+            reverse = reverse + str.charAt(i);
+        }
+
+        // Come out of loop and print the reverse
+        System.out.println(reverse);
+
+    }
+}

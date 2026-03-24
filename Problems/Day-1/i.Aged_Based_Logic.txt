@@ -1,0 +1,66 @@
+/*
+
+1. Age Based Logic
+📌 Problem:
+
+Write a program that:
+
+Takes age as input
+Prints:
+-“Adult” if age ≥ 18
+-“Minor” if age < 18
+-Prints age after 5 years
+-Prints whether age is even or odd
+
+ */
+
+// Sample Input --> Enter age: 21
+
+/*
+
+Sample o/p:
+
+Adult
+After 5 years: 26
+Age is Odd
+
+ */
+
+
+
+
+package Basics;
+
+import java.util.Scanner;
+public class i_AgedBasedLogic {
+    public static void main(String[] args){
+
+        // Takes input from user so
+        Scanner sc = new Scanner(System.in);
+
+        //Now ask for input
+        System.out.print("Enter the age: ");
+        int age = sc.nextInt();
+
+        // Now check the condition for adult or minor
+        if(age >= 18){
+            System.out.println("Adult");
+        }
+        else{
+            System.out.println("Minor");
+        }
+
+
+        // The age after 5 yrs will be
+        System.out.println("The age after 5 years = " + (age+5));
+
+
+        //Checking wether the age is even or not
+        if(age % 2 == 0){
+            System.out.println("Age is even");
+        }
+        else{
+            System.out.println("Age is odd");
+        }
+    }
+}

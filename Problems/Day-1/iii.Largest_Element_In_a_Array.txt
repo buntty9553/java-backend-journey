@@ -1,0 +1,41 @@
+/*
+4. Largest Number in Array
+📌 Problem:
+
+Find the largest number in the given array.
+
+
+
+Sample I/P = Array: 10 25 5 40 15
+Sample O/P = Largest number: 40
+ */
+
+
+
+
+package Basics;
+
+public class iii_Largest_Number_In_Array {
+    public static void main(String[] args){
+
+        // Assume max = 0 at first
+        int max = Integer.MIN_VALUE;
+
+        // This is the direct way for Initializing the array
+        int[] arr = {10,25,5,40,15};
+
+        //Check the length of the array because we need to run the loop
+        int size = arr.length;
+
+        //Now run the loop and update the max value till you find the max element
+        for(int i = 0; i<size; i++){
+            if(arr[i] > max){
+                max = arr[i];
+            }
+        }
+
+        // Come out of loop and print max
+        System.out.println("The max element in the array is: "+ max);
+
+    }
+}
