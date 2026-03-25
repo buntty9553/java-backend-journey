@@ -1,0 +1,53 @@
+/*
+🔁 2. Reverse a Number
+📌 Problem:
+
+Reverse the given number
+
+Sample I/P = Enter number: 4567
+
+Sample O/P = Reversed: 7654
+ */
+
+
+
+
+
+package Day02;
+
+import java.util.Scanner;
+public class ii_Reverse_A_Number {
+    public static void main(String[] args){
+
+        // Take the number from the user
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int num = sc.nextInt();
+
+        // Assume Initially reverse number = 0
+        int reverse = 0;
+
+        /*
+         Logic ---> Remove every digit from the last of a number and add it to the reverse
+                    and multiply reverse with 10.
+        */
+
+        while(num > 0){
+            // Store last digit in temporary variable
+            int last_digit = num % 10;
+
+            // Multiply the reverse with 0 and add last digit
+            reverse = (reverse * 10) + last_digit ;
+
+            // Now update the num by removing the last digit from it
+            num = num/10;
+
+        }
+
+        // Now after loops completes print reverse
+        System.out.println(reverse);
+
+
+
+    }
+}

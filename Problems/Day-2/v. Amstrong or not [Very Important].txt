@@ -1,0 +1,64 @@
+/*
+⭐ 5. Armstrong Number
+📌 Problem:
+
+Check whether number is Armstrong --> 👉 Sum of each digit raised to the power of total digits = original number
+
+📥 Input:
+Enter number: 153
+📤 Output:
+Armstrong Number
+ */
+
+
+
+package Day02;
+
+public class v_Amstrong_Number {
+    public static void main(String[] args) {
+
+        // Take the number to check
+        int num = 153;
+
+        // Store that num for future purpose
+        int original = num;
+
+        // Check the number of digits does the num have initially count = 0
+        int digits = 0;
+        int temp = num;
+        while(temp > 0){
+            temp = temp/10;
+            digits++;
+        }
+
+
+        // now check the amstrong sum --> sum of cubes of each digit
+        int amstrong_sum = 0;
+        while(num > 0){
+
+            // Store the last digit
+            int last_digit = num % 10;
+
+            // take last digit, cube it, and add it to amgstrong_sum
+            amstrong_sum += Math.pow(last_digit,digits);
+
+            // now update the num value by removing the last digit
+            num /= 10;
+        }
+
+
+
+        // Now compare the original value with amstrong sum
+        if(amstrong_sum == original){
+            System.out.println("Amstrong Number");
+        }
+        else{
+            System.out.println("Not an Amstrong Number");
+        }
+
+    }
+
+
+}
+
+

@@ -1,0 +1,59 @@
+🚀 DAY 2 — TOPICS TO LEARN
+
+👉 Today focus = Number Logic + Loops Mastery
+
+
+
+🧠 1. While Loop (Deep Understanding)
+Learn:
+- Syntax of while
+- When to use while vs for  --
+- Infinite loop mistakes
+- Loop control (break)
+
+
+
+
+🧠 2. Number Manipulation Basics
+Learn:
+- % 10 → last digit extraction
+- / 10 → removing last digit
+- How numbers break into digits
+
+
+
+
+🧠 3. Loop-Based Problem Solving
+Learn:
+- Running loops until number becomes 0
+- Accumulating results (sum, reverse, count)
+
+
+
+
+🧠 4. Mathematical Logic
+Learn:
+- What is palindrome (number)
+- What is Armstrong number
+- How powers work (cube, etc.)
+
+
+
+
+
+🧠 5. Nested Loops (Intro)
+Learn:
+- Loop inside loop
+- Used in patterns
+
+
+
+
+🧠 6. Pattern Thinking
+Learn:
+- Rows vs Columns concept
+- How to print shapes using loops
+
+
+
+

@@ -1,0 +1,51 @@
+/*
+💻 1. Sum of Digits
+📌 Problem:
+
+Find sum of digits of a number
+
+Sample I/O = 1234
+Sample O/P = 10
+ */
+
+
+
+
+package Day02;
+
+import java.util.Scanner;
+public class i_SumOfDigits {
+    public static void main(String[] args){
+
+        //Take the number from the user by using scanner class
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the number: ");
+        int num = sc.nextInt();
+
+        // Assume that at first sum = 0
+        int sum = 0;
+
+        // Logic ---> Remove last number from the num and add it to reverse.........
+
+        // to get last number we use %10 in a loop till the number is greater than 0..
+        while(num > 0){
+
+            // take a temporary variable to store last number
+            int temp = num % 10;
+
+            // add last number to sum
+            sum = sum + temp;
+
+            // Now update the num by removing the last num
+            num = num / 10;
+
+
+
+        }
+
+        // The loop will run till the num > 0 and exits --> print sum
+        System.out.println(sum);
+
+
+    }
+}

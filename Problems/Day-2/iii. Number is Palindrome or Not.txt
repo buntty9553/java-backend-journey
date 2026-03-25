@@ -1,0 +1,57 @@
+/*
+🔥 3. Palindrome Number
+📌 Problem:
+
+Check whether number is palindrome
+
+Sample I/P = Enter number: 121
+Sample O/P = Palindrome
+ */
+
+package Day02;
+
+import java.util.Scanner;
+public class iii_Palindrom_Number {
+    public static void main(String[] args){
+
+        // Take the number from the user
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the number: ");
+        int num = sc.nextInt();
+
+        // First store the num first because we will modify the num while reversing the number.
+        int original = num;
+
+        /*
+         Logic ---> Reverse the number and check wether reverse == num or not
+        */
+
+        // Initially reverse = 0
+        int reverse = 0;
+
+        while(num > 0){
+
+            // Store thr last digit in a temp variable
+            int temp = num % 10;
+
+            //Add that in the reverse
+            reverse = reverse * 10 + temp;
+
+            // Remove the last digit from the num
+            num /= 10;
+
+        }
+
+        // Here we check original with reversed number this is why we stored num value
+        if (original == reverse){
+            System.out.println("Palindrome");
+        }
+        else{
+            System.out.println("Not a palindrome");
+        }
+
+
+
+    }
+}
+

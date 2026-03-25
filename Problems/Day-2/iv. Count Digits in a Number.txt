@@ -1,0 +1,37 @@
+/*
+📊 4. Count Digits
+📌 Problem:
+
+Count digits in a number
+
+📥 Input: Enter number: 9876
+📤 Output: 4
+
+ */
+
+
+package Day02;
+
+public class iv_Count_Digits {
+    public static void main(String[] args){
+
+        // Take the number
+        int num = 986767;
+
+        // Initially assume that count = 0
+        int count = 0;
+
+        /*
+        Logic ---> Remove the last digit from num and increment the count till num > 0
+         */
+
+        while(num > 0){
+
+            num /= 10;
+            count++;
+        }
+
+        // Noe print the count
+        System.out.println(count);
+    }
+}
