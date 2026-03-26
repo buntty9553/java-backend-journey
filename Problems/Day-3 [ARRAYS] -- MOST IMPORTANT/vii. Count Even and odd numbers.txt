@@ -1,0 +1,71 @@
+/*
+
+
+🔢 5. Count Even and Odd Numbers
+📌 Problem:
+
+Write a program to count how many elements are even and how many are odd.
+
+📥 Sample Input:
+Enter size: 6
+
+Enter elements: 1 2 3 4 5 6
+
+📤 Sample Output:
+Even: 3
+Odd: 3
+
+
+
+ */
+
+
+
+
+
+
+
+
+
+package Day03_Arrays;
+
+public class vii_Count_Even_and_Odd {
+    public static void main(String[] args){
+
+        // Take the array directly
+        int[] arr = {1,2,3,4,5,6};
+
+        /*
+        Logic --> - Take 2 viariables to count no.of evens & no.of odds
+                  - Travel through the array
+                  - if element % 2 == 0 then even else odd
+         */
+
+        // Counting evens
+        int evens = 0;
+
+        // Counting odds
+        int odds = 0;
+
+
+        // Travel through the array
+        for(int i = 0; i < arr.length; i++){
+
+            // Check the condition
+            if(arr[i] % 2 == 0){
+
+                //it is even
+                evens++;
+            }
+            else {
+
+                // it is odd
+                odds++;
+            }
+        }
+
+        // Print the no.of evens and no.of odds
+        System.out.println("Evens: "+evens);
+        System.out.println("Odds: "+odds);
+    }
+}

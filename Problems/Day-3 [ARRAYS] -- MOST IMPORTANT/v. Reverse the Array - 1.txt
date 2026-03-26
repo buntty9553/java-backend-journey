@@ -1,0 +1,84 @@
+/*
+
+
+🔁 4. Reverse an Array
+📌 Problem:
+
+Write a program to reverse the array.
+
+📥 Sample Input:
+Enter size: 5
+
+Enter elements: 1 2 3 4 5
+
+📤 Sample Output:
+Reversed: 5 4 3 2 1
+
+
+
+ */
+
+
+
+
+
+// Approch - 1 --> We will solve it using reverse loop
+
+
+
+
+
+
+
+
+
+package Day03_Arrays;
+
+
+import java.util.Scanner;
+public class v_Reverse_The_Array {
+    public static void main(String[] args){
+
+        // Take the array from the user
+        Scanner sc = new Scanner(System.in);
+
+        // 1. Take the size of the array
+        System.out.print("Enter the size of an array: ");
+        int n = sc.nextInt();
+
+        // 2. Initialize the Array with size n
+        int[] arr = new int[n];
+
+        // 3. Now run the loop till n and take the elements from the user
+        System.out.println("Enter the elements: ");
+        for(int i = 0; i<n; i++){
+            arr[i] = sc.nextInt();
+        }
+
+
+        // Now reversing the array
+
+        /*
+        Logic --> 1.take another array named reverse arr
+                  2. Run the reverse loop for the arr
+                  3. store the elements from the first in reverse array
+         */
+
+
+        // Initialize the new array of same size
+        int[] rev_arr = new int[n];
+
+        for(int i = n-1; i>=0; i--){
+
+            // store the elements in rev_arr
+            rev_arr[n-i-1] = arr[i];
+        }
+
+        // Print the rev_array
+        for(int i = 0; i<n; i++){
+            System.out.print(rev_arr[i] + " ");
+        }
+
+    }
+}
+

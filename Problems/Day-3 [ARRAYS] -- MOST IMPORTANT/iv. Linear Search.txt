@@ -1,0 +1,87 @@
+/*
+
+🔍 3. Linear Search
+📌 Problem:
+
+Write a program to search for a given element in an array.
+If found, print its index. Otherwise print "Not Found".
+
+📥 Sample Input:
+Enter size: 5
+Enter elements: 10 20 30 40 50
+Enter target: 30
+
+📤 Sample Output:
+Found at index: 2
+
+📥 Sample Input (Not Found):
+Enter target: 100
+
+📤 Sample Output:
+Not Found
+
+ */
+
+
+
+
+
+
+package Day03_Arrays;
+
+import java.util.Scanner;
+public class iv_Linear_Search {
+    public static void main(String[] args){
+
+        // Take the array directly
+        int[] arr = {10,20,30,40,50};
+
+        //Take the length of the array
+        int length = arr.length;
+
+        // Take the target element from the user to search in the array
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the target element: ");
+        int target = sc.nextInt();
+
+        /*
+        Logic ---> Travel through each element inside the array
+                   check if that element is matching with target or not
+                   if matched --> element found
+                   else ---> not found
+         */
+
+        //initially think that target is not found take the boolean value like
+        boolean found = false;
+
+        //Take the variable to check at which index the element is present
+        int index = 0;
+
+        // Travel through array using for loop
+        for(int i = 0; i<length; i++){
+
+            // Check the condition if arr[i] is equal to target or not
+            if(arr[i] == target){
+
+                // target found right now update the boolean value to true
+                found = true;
+
+                // update the index
+                index = i;
+
+                break; // If the element is found this statement will break the loop beacuse no need to search further
+            }
+
+        }
+
+        //Now check the condition like if found == true then element found else false
+        if(found){
+            System.out.println("Found at index: "+ index);
+        }
+        else{
+            System.out.println("Not found");
+        }
+
+    }
+
+}

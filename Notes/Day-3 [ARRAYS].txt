@@ -1,0 +1,225 @@
+📄 DAY 3 — ARRAYS (DETAILED NOTES)   ---->    MOST IMPORTANT GO THROUGH EVERYTHING  
+
+
+🧠 1. What is an Array?
+
+An array is a collection of elements of the same data type stored in contiguous memory locations.
+
+👉 Instead of creating multiple variables:
+int a = 10
+int b = 20
+int c = 30
+
+👉 We use array:
+int[] arr = {10, 20, 30};
+
+
+
+⚡ Key Points
+- Stores multiple values in one variable
+- All elements must be of same type
+- Size is fixed once created
+- Accessed using index
+
+-----------------------------------------
+
+
+
+🔢 2. Indexing (VERY IMPORTANT)
+
+Array uses 0-based indexing
+
+Example:
+arr = {10, 20, 30, 40}
+
+Index	Value
+0	10
+1	20
+2	30
+3	40
+
+
+👉 Access:
+- arr[0] = 10
+- arr[2] = 30
+
+
+
+-----------------------------------------
+
+
+🧱 3. Declaration & Initialization
+Step 1: Declaration
+
+int[] arr;
+
+Step 2: Initialization
+
+arr = new int[5];
+
+👉 Combined:
+int[] arr = new int[5];
+
+(or)
+
+Direct Initialization:
+
+int[] arr = {1, 2, 3, 4, 5};
+
+
+
+
+
+-----------------------------------------
+
+📥 4. Taking Input in Array
+
+Use loop + Scanner:
+
+- First take size and store it in n
+- Then loop to store elements
+
+Logic:
+Repeat n times → store values in arr[i]
+
+
+
+-----------------------------------------
+
+
+
+
+🔁 5. Array Traversal
+
+Traversal means accessing all elements one by one.
+
+👉 Done using loop:
+
+for (int i = 0; i < arr.length; i++)
+
+👉 arr.length gives size of array
+
+
+
+
+
+-----------------------------------------
+
+
+📊 6. Basic Operations on Array
+
+➤ Sum of elements
+- Initialize sum = 0
+- Add each element
+
+➤ Maximum element
+- Assume first element is max
+- Compare with others
+
+➤ Minimum element
+- Same logic as max
+
+
+
+-----------------------------------------
+
+
+🔍 7. Linear Search (VERY IMPORTANT)
+
+Search an element by checking each element one by one.
+
+Steps:
+
+1. Take target value
+2. Loop through array
+3. If arr[i] == target → found
+4. Else continue
+
+👉 Time Complexity = O(n)
+
+
+
+
+-----------------------------------------
+
+
+
+🔁 8. Reverse an Array
+
+Two approaches:
+
+Approach 1:
+
+- Print from end to start
+
+Approach 2 (IMPORTANT):
+
+- Swap elements:
+
+First ↔ Last
+Second ↔ Second Last
+
+Use two pointers:
+
+ i → start
+ j → end
+
+
+
+-----------------------------------------
+
+
+
+
+🧮 9. Even & Odd in Array
+
+Logic:
+
+- If arr[i] % 2 == 0 → Even
+- Else → Odd
+
+Maintain two counters
+
+
+
+-----------------------------------------
+
+
+
+
+
+⏱️ 10. Time Complexity (Intro)
+
+Time complexity tells how fast algorithm runs.
+
+Common:
+- Loop → O(n)
+- Nested loop → O(n²)
+
+👉 Example:
+- Traversing array = O(n)
+
+
+
+-----------------------------------------
+-----------------------------------------
+
+
+
+
+
+🔥 11. Why Arrays Are Important?
+
+Arrays are base for:
+
+Lists
+Stacks
+Queues
+Trees
+Graphs
+
+👉 If arrays weak → everything weak
+
+
+
+

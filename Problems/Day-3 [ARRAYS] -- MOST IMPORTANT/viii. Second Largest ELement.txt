@@ -1,0 +1,60 @@
+/*
+
+
+🔥 7. Second Largest Element (IMPORTANT)
+📌 Problem:
+
+Find the second largest element in an array.
+
+📥 Sample Input:
+Enter size: 5
+
+Enter elements: 10 25 5 40 15
+
+📤 Sample Output:
+Second Largest: 25
+
+
+
+ */
+
+
+
+
+
+
+
+package Day03_Arrays;
+
+public class viii_Sec_Largest_Element {
+    public static void main(String[] args){
+
+
+        // Take the Array directly
+        int[] arr = {10,25,5,40,15};
+
+        // Length of the array
+        int n = arr.length;
+
+        // Take two variables for max and  2nd max
+        int max = Integer.MIN_VALUE;
+        int sec_max = Integer.MIN_VALUE;
+
+
+        // first loop is to find the max in the array
+        for(int i = 0; i<n; i++){
+            max = Math.max(arr[i], max); // This is using math library once go through it
+        }
+
+        // This loop is for sec max
+        for(int i = 0; i<n; i++){
+            if(arr[i] > sec_max && arr[i] != max){
+                sec_max = arr[i];
+            }
+        }
+
+
+        System.out.println("First Largest: "+max);
+        System.out.println("Second Largest: " +sec_max);
+    }
+}

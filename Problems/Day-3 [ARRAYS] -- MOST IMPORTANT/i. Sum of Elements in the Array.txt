@@ -1,0 +1,65 @@
+/*
+
+
+💻 1. Sum of Array Elements
+📌 Problem:
+
+Write a program to find the sum of all elements in an array.
+
+📥 Sample Input:
+Enter size: 5
+Enter elements: 1 2 3 4 5
+
+📤 Sample Output:
+Sum: 15
+
+
+
+ */
+
+
+
+
+
+
+package Day03_Arrays;
+
+import java.util.Scanner;
+public class i_Sum_Of_Elements {
+    public static void main(String[] args){
+
+        // Take the array input from the user using scanner
+        Scanner sc = new Scanner(System.in);
+
+        // Steps : 1. Make sure first you take the size of an array
+        System.out.print("Enter the size of an array: ");
+        int n = sc.nextInt();
+
+        //2. Initialize the array of that size
+        int[] arr = new int[n];
+
+        // 3. Now run the loop till n and take input in every index
+        System.out.println("Enter the array Elements: ");
+        for(int i = 0; i<n; i++){
+
+            arr[i] = sc.nextInt();  // arr[i] --> place of the element in the array
+        }
+
+
+        // Now we have array we need to find the sum of elements present in that
+
+        // 1. Assume sum = 0 initially
+        int sum = 0;
+
+        // 2. Traverse through each element in that array and add every element to the sum
+        for(int i = 0; i<n; i++){
+
+            //add to sum
+            sum = sum + arr[i];
+        }
+
+
+        //3. Finally print the sum
+        System.out.println(sum);
+    }
+}

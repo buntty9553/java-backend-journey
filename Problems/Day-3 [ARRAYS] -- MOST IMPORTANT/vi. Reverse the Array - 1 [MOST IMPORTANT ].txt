@@ -1,0 +1,93 @@
+/*
+
+
+Reversing the array in the same array
+This is Approch - 2 ---> Most Efficient and used
+
+Basic DSA concepts:
+
+- Using 2 pointer Approach
+- Using swapping of numbers
+
+
+
+ */
+
+
+/*
+
+
+            MOST IMPORTANT
+     💡 Important Insight
+
+👉 This pattern is used in:
+
+- Array reversal
+- String reversal
+- Palindrome checking
+- Two-sum (sorted array)
+- Partition problems
+
+👉 So don’t treat this as just “reverse array”
+This is a CORE DSA PATTERN
+
+
+
+ */
+
+
+
+
+
+
+
+
+package Day03_Arrays;
+
+public class vi_Reverse_Array_2 {
+    public static void main(String[] args){
+
+        // Take the array Directly
+        int[] arr = {1,2,3,4,5};
+
+        //Take the length of the array
+        int n = arr.length;
+
+        /*
+        Logic -->
+                    1. Now initialize two pointers i & j
+                    2. i is from start
+                    3. j is from end
+                    4. Run the loop till i<j
+                    5. for each iteration swap arr[i] & arr[j] and i++ & j--
+         */
+
+
+        // 1. initializing
+        int i = 0;
+        int j = arr.length - 1;
+
+        // 2. Run the loop
+        while(i < j){
+
+            // Swap arr[i] & arr[j]
+            int temp = arr[i];
+            arr[i] = arr[j];
+            arr[j] = temp;
+
+            // Increment i
+            i++;
+
+            // Decrement j
+            j--;
+        }
+
+        // Print the array
+        for(int k = 0; k<n; k++){
+            System.out.print(arr[k] + " ");
+        }
+
+    }
+}
+
+
