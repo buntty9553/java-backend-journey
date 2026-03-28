@@ -1,0 +1,106 @@
+🔁 1. SYMMETRY → PALINDROME PATTERN
+
+
+📌 Idea:
+
+Elements are same from start and end
+
+🧠 Example:
+
+Array:
+
+1 2 3 2 1
+
+Check:
+
+- arr[0] == arr[4]
+- arr[1] == arr[3]
+
+👉 This is mirror/symmetry
+
+🧨 Interview Thinking:
+
+👉 “I need to compare both ends → use two pointers”
+
+
+
+-----------------------------------------------------------------------
+
+
+
+🔄 2. MOVEMENT → SHIFTING ELEMENTS
+📌 Idea:
+
+Some elements need to move to another position
+
+🧠 Example:
+
+Move zeros to end:
+
+0 1 0 3 12
+
+Output:
+
+1 3 12 0 0
+
+⚡ What’s happening?
+- Non-zero elements move forward
+- Zeros move to end
+
+
+🧠 Logic:
+- Maintain position for valid elements
+- Shift unwanted elements
+
+
+🎯 Used in:
+- Move zeros
+- Remove duplicates
+- Rearrange array
+
+
+-----------------------------------------------------------------------
+
+
+
+➕ 3. MATCHING → PAIR SUM PATTERN
+📌 Idea:
+
+Find two elements that satisfy a condition
+
+🧠 Example:
+Array: 2 7 11 15  
+Target: 9
+
+Output:
+
+2 + 7
+
+⚡ What’s happening?
+We are finding a pair
+
+
+🧠 Logic:
+- Check combinations
+- Use two pointers OR loop
+
+
+🎯 Used in:
+- Two Sum
+- Pair difference
+- Target problems
+
+
+🧨 Interview Thinking:
+
+👉 “I need a pair → use matching logic”
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+

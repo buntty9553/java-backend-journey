@@ -1,0 +1,23 @@
+🧠 3. Brute Force vs Optimized
+
+❌ Brute Force:
+
+- Simple logic
+- More loops
+- Higher time complexity
+
+Example:
+Nested loop → O(n²)
+
+
+--------------------------------------------------------
+
+
+✅ Optimized Approach
+
+- Smart logic
+- Fewer loops
+- Better performance
+
+Example:
+Single loop → O(n)

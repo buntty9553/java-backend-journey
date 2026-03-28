@@ -1,0 +1,41 @@
+🧠 1. Two Pointer Technique (VERY IMPORTANT)
+📌 What is it?
+
+A technique where we use two indices (pointers) to solve problems efficiently.
+
+Usually:
+
+One pointer starts from beginning → i = 0
+One pointer starts from end → j = n - 1
+
+⚡ Why use it?
+- Reduces time complexity
+- Avoids extra loops
+
+Makes solution efficient
+
+🔁 Common Use Cases
+
+- Reverse array
+- Check palindrome
+- Pair problems (sum = target)
+
+
+🧠 Example Thinking (Reverse Array)
+
+Array:
+1 2 3 4 5
+
+Step:
+
+Swap arr[0] ↔ arr[4]
+Swap arr[1] ↔ arr[3]
+
+Stop when i >= j
+
+⚠️ Important Rule
+
+Always update both pointers:
+
+i++
+j--

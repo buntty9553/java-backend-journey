@@ -1,0 +1,22 @@
+🧠 4. Dry Run (CRITICAL SKILL)
+📌 What is Dry Run?
+
+Manually executing code step by step.
+
+🧠 Why Important?
+
+- Helps understand logic
+- Finds bugs easily
+- Improves thinking
+
+🔁 How to Do?
+
+Example:
+Array: 1 2 3
+
+Loop:
+i = 0 → arr[0] = 1
+i = 1 → arr[1] = 2
+i = 2 → arr[2] = 3
+
+👉 Always dry run before coding complex logic

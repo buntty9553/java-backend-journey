@@ -1,0 +1,49 @@
+					MOST IMPORTANT
+
+					
+🧠 2. Edge Cases in Arrays
+
+👉 Interviewers test this more than logic sometimes
+
+⚡ Types of Edge Cases
+1. Empty Array
+
+size = 0
+👉 No elements → avoid loop errors
+
+----------------------------------------------------------------------------
+
+2. Single Element
+
+size = 1
+👉 Reverse = same
+👉 Always palindrome
+
+
+----------------------------------------------------------------------------
+
+
+3. All Elements Same
+
+{5, 5, 5, 5}
+👉 Palindrome
+👉 No unique values
+
+
+----------------------------------------------------------------------------
+
+
+4. Negative Numbers
+
+{-1, -2, -3}
+👉 Don’t assume only positive
+
+
+----------------------------------------------------------------------------
+
+
+5. Zeros in Array
+
+{0, 1, 0, 3}
+👉 Important in shifting problems
+

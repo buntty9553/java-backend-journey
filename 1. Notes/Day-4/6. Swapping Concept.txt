@@ -1,0 +1,16 @@
+🧠 6. Swapping Concept
+
+📌 What is swapping?
+
+Exchanging two values
+
+⚡ Steps:
+
+- temp = arr[i]
+- arr[i] = arr[j]
+- arr[j] = temp
+
+👉 Used in:
+
+- Reverse array
+- Sorting

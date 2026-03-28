@@ -1,0 +1,80 @@
+/*
+
+
+--------------> Learn Array List Concept
+
+
+⭐ 6. Remove Duplicates (ADVANCED THINKING)
+📌 Problem:
+
+Remove duplicate elements and print unique values
+
+📥 Input:
+Enter size: 6
+
+Enter elements: 1 2 2 3 4 4
+
+📤 Output:
+Unique: 1 2 3 4
+
+👉 Pattern: (movement + thinking)
+
+
+
+
+ */
+
+
+
+
+
+
+
+package Day04_Array_Problem_solving;
+
+import java.util.ArrayList;
+
+public class vi_Remove_Duplicates {
+    public static void main(String[] args){
+
+        // Take the array directly
+        int[] arr = {1,2,2,3,4,4};
+
+        /*
+        Handle the edge cases first
+         */
+
+        if(arr == null || arr.length <= 1){
+            return;
+        }
+
+        /*
+        Now come to original part
+        logic -->
+                   1. Create a hash set
+                   2. add each and every element in the array to ArrayList
+                   3. if the element is already present in has set skip the element
+         */
+
+        // 1. Create hash set
+        ArrayList<Integer> unique = new ArrayList<>(); // Syntax to create
+
+        // 2. Iterate through the array
+        for(int i = 0; i<arr.length; i++){
+
+            // Check the condition if the element is present in hash set or not
+            if(unique.contains(arr[i])){
+                continue;
+            }
+            else{
+                // Else add the element
+                unique.add(arr[i]);
+            }
+
+
+        }
+
+        System.out.println(unique);
+
+    }
+}

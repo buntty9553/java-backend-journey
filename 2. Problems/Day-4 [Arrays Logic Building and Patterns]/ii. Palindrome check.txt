@@ -1,0 +1,105 @@
+/*
+
+
+
+🧠 2. Check Palindrome Array
+📌 Problem:
+
+Check whether the array is palindrome
+
+📥 Input:
+Enter size: 5
+
+Enter elements: 1 2 3 2 1
+
+📤 Output:
+Palindrome
+
+📥 Input:
+Enter elements: 1 2 3 4 5
+
+📤 Output:
+Not Palindrome
+
+
+
+
+ */
+
+
+
+
+
+
+
+package Day04_Array_Problem_solving;
+
+public class ii_Palindrome_Check {
+    public static void main(String[] args){
+
+        // Take the array Directly
+        int[] arr = {1,1,1,1};
+
+        // size of an array
+        int n = arr.length;
+
+        /*
+        Check the Edge Cases
+         */
+
+
+        // 1. If the array has 0 elements
+        if(arr.length == 0){
+            System.out.println("No elements in the array");
+            return;
+        }
+
+        // 2. If the array has only one element then return
+        if(arr.length == 1){
+            System.out.println("The Array has only 1 element.");
+            return;
+        }
+
+        /*
+        Now check for Original
+
+        --> Use Two pointer
+        --> Fist element should be equal to last
+        --> Second element should be equal to last-1
+
+         */
+
+
+        // 1. Initialize start and end
+        int start = 0;
+        int end = n-1;
+
+
+        // 2. Assume the array is a palindrome initially
+        boolean palindrome = true;
+
+        // 3. Run the loop
+        while(start < end){
+            if(arr[start] != arr[end]){
+                palindrome = false;
+                break;
+            }
+
+            // Update start and end
+            start++;
+            end--;
+        }
+
+
+        // Now print Palindrome if palindrome == true else print not a palindrome
+        if(palindrome){
+            System.out.println("Palindrome");
+        }else{
+            System.out.println("Not a palindrome.");
+        }
+
+
+
+
+    }
+}

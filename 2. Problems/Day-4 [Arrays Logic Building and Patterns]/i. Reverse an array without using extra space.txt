@@ -1,0 +1,85 @@
+/*
+
+
+
+🔁 1. Reverse Array (In-Place)
+📌 Problem:
+
+Reverse the array using two pointer technique (no extra array)
+
+📥 Input:
+Enter size: 5
+
+Enter elements: 1 2 3 4 5
+
+📤 Output:
+Reversed: 5 4 3 2 1
+
+*/
+
+
+
+
+
+package Day04_Array_Problem_solving;
+
+public class i_Reverse_an_array {
+    public static void main(String[] args){
+
+        // Take the array directly
+        int[] arr = {1,2,3,4,5,6};
+
+        // Take the length of the array
+        int n = arr.length;
+
+        /*
+        Handling the Edge Cases first
+        */
+
+        // 1. If array is null (important in real scenarios)
+        if (arr == null) {
+            System.out.println("Array is null");
+            return;
+        }
+
+        // 2. If array has no elements
+        if (n == 0) {
+            System.out.println("Array has no elements to reverse");
+            return;
+        }
+
+        // 3. If array has only one element
+        if (n == 1) {
+            System.out.println("Only 1 element, array remains same: " + arr[0]);
+            return;
+        }
+
+        /*
+        Now come to actual part
+        Use two pointers to solve this
+        */
+
+        // 1. Initialize i and j
+        int i = 0;
+        int j = n - 1;
+
+        // 2. Swap elements until pointers meet
+        while (i < j) {
+
+            // Swap the elements
+            int temp = arr[i];
+            arr[i] = arr[j];
+            arr[j] = temp;
+
+            // Move pointers
+            i++;
+            j--;
+        }
+
+        // Print the reversed array
+        System.out.print("The Reversed array is: ");
+        for (int k = 0; k < n; k++) {
+            System.out.print(arr[k] + " ");
+        }
+    }
+}

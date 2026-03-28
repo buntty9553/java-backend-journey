@@ -1,0 +1,81 @@
+/*
+
+
+
+🔥 7. Check Sorted Array
+📌 Problem:
+
+Check whether array is sorted in ascending order
+
+📥 Input:
+Enter size: 5
+Enter elements: 1 2 3 4 5
+📤 Output:
+Sorted
+📥 Input:
+Enter elements: 1 3 2 5 4
+📤 Output:
+Not Sorted
+
+👉 Pattern: (comparison logic)
+
+
+
+
+ */
+
+
+
+
+
+
+
+package Day04_Array_Problem_solving;
+
+public class vii_Check_Sorted_or_Not {
+    public static void main(String[] args){
+
+        // Take the array directly
+        int[] arr = {1,2,3,4,5};
+
+        /*
+        Handle the edge cases first
+
+         */
+        if(arr == null || arr.length <= 1){
+            return;
+        }
+
+
+        /*
+        Now come to original part
+        Logic -->
+                    1. Check the next element is greater than the previous element by running a loop
+                    2. even if one element fails the condition it is not sorted
+
+         */
+
+
+        // Assume array is sorted first
+        boolean sorted = true;
+
+
+        // run the loop from 1st index in the array
+        for(int j = 1; j<arr.length; j++){
+
+            // Now check thr condition
+            if(arr[j] < arr[j-1]){
+                sorted = false;
+                break;
+            }
+
+        }
+
+        if(sorted){
+            System.out.println("The array is sorted");
+        }
+        else{
+            System.out.println("The array is not sorted");
+        }
+    }
+}

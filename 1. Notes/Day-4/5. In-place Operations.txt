@@ -1,0 +1,14 @@
+🧠 5. In-Place Operations
+
+📌 Meaning:
+
+- Modify array without using extra space
+
+⚡ Example:
+
+- Reverse array without new array
+
+🎯 Why Important?
+
+- Saves memory
+- Interviewers prefer this

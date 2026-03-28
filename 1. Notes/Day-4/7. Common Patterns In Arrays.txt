@@ -1,0 +1,16 @@
+🧠 7. Common Problem Patterns
+
+🔁 Reverse Pattern
+- Start ↔ End swapping
+
+
+🔍 Search Pattern
+- Traverse and compare
+
+
+🔄 Shift Pattern
+- Move elements (like zeros to end)
+
+
+➕ Pair Pattern
+- Two elements satisfying condition

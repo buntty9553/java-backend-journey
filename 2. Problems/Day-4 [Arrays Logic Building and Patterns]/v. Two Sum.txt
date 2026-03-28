@@ -1,0 +1,86 @@
+/*
+
+
+
+➕ 5. Two Sum (IMPORTANT)
+📌 Problem:
+
+Find two numbers whose sum equals target
+
+📥 Input:
+Enter size: 5
+
+Enter elements: 2 7 11 15 3
+
+Enter target: 9
+📤 Output:
+Pair: 2 + 7
+
+
+👉 Pattern: (you must know this)
+
+
+
+
+ */
+
+
+
+
+
+package Day04_Array_Problem_solving;
+
+import java.util.Scanner;
+public class v_Two_sum {
+    public static void main(String[] args){
+
+        // Take the array directly
+        int[] arr = {2,7,11,15,3};
+
+        // Take the target value from the user
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the Target value: ");
+        int target = sc.nextInt();
+
+
+        /*
+        Now handle the edge cases
+         */
+        if(arr == null || arr.length <= 1){
+            return;
+        }
+
+        /*
+
+        Now come to original part
+        Logic -->
+                   1. Use nested loop because each and every pair should be consider
+
+         */
+
+        // Initially assume thar pair is not found
+        boolean found = false;
+
+        // Run the loop
+        for(int i = 0; i<arr.length-1 ; i++){
+            for(int j = i+1; j<arr.length; j++){
+
+                // Check the condition
+                if(arr[i] + arr[j] == target){
+                    System.out.println("Pair: " + arr[i] + " + " + arr[j]);
+                    found = true;
+                    break;
+                }
+            }
+
+            if(found){
+                break;
+            }
+        }
+
+        if(!found){
+            System.out.println("No Pair Found");
+        }
+
+    }
+}
